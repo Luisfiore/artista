@@ -4,43 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miranda(No Oficial)</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-image: url(https://cdn.smehost.net/sonymusices-45pressprod/wp-content/uploads/2018/10/foto_de_miranda-2.jpg);">
-    <style>
-        ul{padding: 0; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px;
-        margin: 5px; border-radius: 2px; background-color: rgb(181, 181, 223);
-        }
-        ul li{
-            display: inline; padding: 10px;
-        }
-        h1{
-            color: rgb(197, 19, 19); text-align: center; font-family: fantasy; font-size: 50px;
-        }
-        aside{
-            float: inline-start; float: right; border: solid black 1px; width: 300px; height: 800px; padding: 10 px; margin: 5px;
-        }
-        div{
-            width: 850px;
-        }
-        #Noticias{
-            background-color: rgba(255, 250, 250, 0.568); width: 840px;
-        }
-        #Eventos{
-            background-color: rgba(255, 250, 250, 0.568); width: 840px;
-        }
-        aside ol{
-            padding: 2px; margin-top: 20px;
-        }
-        footer{
-            padding: 0;
-        }
-        #form{
-            margin: 0 auto;
-            width: 400px;
-        }
-        .formu{
-        }
-    </style>
+    
     <header>
         <nav>
             <ul>
@@ -57,36 +24,26 @@
             <h1>MIRANDA!</h1>
         </section>
         <section>
-            <form>
-                <ul id="form">
-                    <li class="formu">
-                        <label for="Nombre">Nombre</label>
-                        <input type="text">
-                    </li><br>
-                    <li class="formu">
-                        <label for="Apellido">Apellido</label>
-                        <input type="text">
-                    </li><br>
-                    <li class="formu">
-                        <label for="Edad">Edad</label>
-                        <input type="number">
-                    </li><br>
-                    <li class="formu">
-                        <label for="Email">Email</label>
-                        <input type="email">
-                    </li><br>
-                    <li class="formu">
-                        <label>Deja aqui tu mensaje</label>    
-                        <textarea cols="30" rows="10"></textarea>
-                    </li><br>
-                    <li class="formu">
-                        <button>Enviar</button>
-                    </li>
-                </ul>
+            <form class="form">
+                <fieldset>
+                    <label>Nombre</label>
+                    <input type="text" name="nombre"><br>
+                    <label>Apellido</label>
+                    <input type="text" name="apellido"><br>
+                    <label>Email</label>
+                    <input type="email" name="email"><br>
+                    <label>Edad: </label><br>
+                    <input type="radio" name="edad" class="radio"> Menor de 20 años<br>
+                    <input type="radio" name="edad" class="radio"> Entre 20 y 40 años<br>
+                    <input type="radio" name="edad" class="radio"> Mayor de 20 años<br>
+                    <label>Mensaje</label>
+                    <textarea></textarea><br><br>
+                    <input type="checkbox"> Acepto recibir informacion al respecto<br><br>
+                    <input type="button" value="Enviar"><br><br>
+                    <input type="reset" value="Restablecer" />
+                </fieldset>
             </form>
         </section>
-    
-    
     </main>
 
 
