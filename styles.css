@@ -90,8 +90,22 @@ footer ul li{
 
 /* discografia */
 
-.discografia{
+#discografia{
 	background: linear-gradient(180deg, rgba(252, 243, 246, 0.678), rgb(207, 202, 206));
+	font-family: cursive;
+}
+/* Cambia tamañao y fuente de tipografia */
+@media screen and (max-width: 600px){
+	#discografia{
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: small;
+	}
+	.parrafodisco span{
+		font-family: fantasy;
+		text-shadow: rgb(206, 65, 65) 1px 1px;
+
+	}
+
 }
 #section{
 	margin-top: 20px;
@@ -116,7 +130,6 @@ table td{
 }
 
 #disco{
-	font-family: cursive;
 	font-size: 1.5em;
 
 }
@@ -127,13 +140,11 @@ table td{
 	border: hidden;
 	box-shadow: 2px 2px red;
 	border-radius: 10px;
-	font-family: cursive;
 }
 .parrafodisco span{
 	color: red;
 	text-shadow: rgb(206, 65, 65) 2px 2px;
 	font-size: 1.7em;
-	font-family: fantasy;
 }
 caption{
 	font-size: 1.5em;
@@ -143,16 +154,15 @@ caption{
 }
 
 /* bio */
-@media screen and (max-width: 600px){
-	#noticias{
-		background-color: olive;
-		
-	}
 
-}
-
-#noticias{
+#bio{
 	background: linear-gradient(180deg, rgba(252, 243, 246, 0.678), rgb(207, 202, 206));
+}
+/* cambia color de fondo */
+@media screen and (max-width: 600px){
+	#bio{
+		background-color: rgb(162, 233, 226);
+	}
 }
 
 #divinte{
@@ -169,8 +179,8 @@ caption{
     justify-content: space-between;
 	list-style: none;
 	text-align: center;
-
 }
+
 .integrante{
 	width: 10em;
 	height: 10em;
@@ -217,5 +227,4 @@ caption{
 	text-align: center;
 	font-size: 2em;
 	height: 100%;
-
 }
