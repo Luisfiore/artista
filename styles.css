@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header ul{
-    padding: 0; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px;
+    padding: 5px; text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 20px;
     margin: 5px; border-radius: 2px; background-color: rgba(138, 166, 216, 0.4); text-decoration: none;
     }
 header ul li{
@@ -16,7 +16,7 @@ h1 {
     text-align: center;
     font-size: 4em;
     font-family: fantasy;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 	margin-top: 1em;
 }
 form fieldset{
@@ -55,19 +55,13 @@ form input[type="radio"]{
 	display:inline-block;
 
 }
-
-form input[type="submit"]{
-	width:100%;
-	border:2px solid #000;
-	border-radius:5px;
-	display:block;
-	color:rgb(206, 65, 65);
-	background-color:#000;
-    padding: 2px;
-} 
-
-form input[type="submit"]:hover{
-	cursor:pointer;
+form input[type="submit"],
+form input[type="reset"]{
+	padding: 2px;
+	font-size: 0.9em;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	border-radius: 2px;
 }
 
 textarea{
@@ -79,6 +73,7 @@ textarea{
 	margin:8px 0;
 	resize:none;
 	display:block;
+	padding: 5px;
 }
 
 /* footer */ 
@@ -86,7 +81,7 @@ footer{
     margin-bottom: 0;
 }
 footer ul{
-    padding: 0; font-family: 'Times New Roman', Times, serif; font-size: 20px;
+    padding: 5px; font-family: 'Times New Roman', Times, serif; font-size: 20px;
     margin: 5px 0px 0px 0px; border-radius: 2px; background-color: rgb(199, 187, 187);text-align: center;
 }
 footer ul li{
@@ -96,7 +91,7 @@ footer ul li{
 /* discografia */
 
 .discografia{
-	background: linear-gradient(180deg, rgb(255, 175, 100), rgb(255, 251, 42));
+	background: linear-gradient(180deg, rgba(252, 243, 246, 0.678), rgb(207, 202, 206));
 }
 #section{
 	margin-top: 20px;
@@ -109,7 +104,7 @@ table{
 	padding: 1px;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	background-color: rgba(40, 208, 214, 0.521);
+	background-color: rgba(241, 220, 181, 0.466);
 }
 table th{
 	border: 1px solid black;
@@ -121,37 +116,50 @@ table td{
 }
 
 #disco{
-	font-family: monospace;
+	font-family: cursive;
 	font-size: 1.5em;
 
 }
 .parrafodisco{
-	background-color: rgb(195, 228, 133);
+	background-color: rgba(231, 204, 154, 0.466);
 	margin: 5px;
 	padding: 20px;
-	border-style: hidden;
+	border: hidden;
+	box-shadow: 2px 2px red;
 	border-radius: 10px;
+	font-family: cursive;
 }
 .parrafodisco span{
 	color: red;
 	text-shadow: rgb(206, 65, 65) 2px 2px;
 	font-size: 1.7em;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: fantasy;
 }
 caption{
 	font-size: 1.5em;
+	padding: 4px;
 	text-shadow: gray 3px 3px;
 
 }
 
 /* bio */
+@media screen and (max-width: 600px){
+	#noticias{
+		background-color: olive;
+		
+	}
+
+}
+
 #noticias{
-	background: linear-gradient(180deg, rgb(255, 175, 100), rgb(255, 251, 42));
+	background: linear-gradient(180deg, rgba(252, 243, 246, 0.678), rgb(207, 202, 206));
 }
 
 #divinte{
-	background-color: aquamarine;
+	background-color: rgb(192, 229, 217);
 	padding: 20px;
+	border-radius: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .ulinte {
 	display: -webkit-flex;
@@ -168,4 +176,46 @@ caption{
 	height: 10em;
 	border-radius: 50%;
 	border-radius: none;
+}
+
+.iframe{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-around;
+}
+.album{
+	justify-content: space-between;
+}
+.titulobio{
+	text-align: center;
+	font-size: 3em;
+	padding: 5px;
+}
+.sectionbio{
+	margin: 0.5em;
+	padding: 2em;
+}
+
+.bodygracias{
+	background: rgba(252, 243, 246, 0.678);
+	background-repeat: no-repeat;
+	text-align: center;
+	margin-left auto;
+	margin-right:auto;
+	width: auto;
+	height: auto;
+}
+
+.gracias{
+	background-color: rgb(236, 232, 232);
+	margin: 1em;
+	padding: 1em;	
+	border: 1.5px solid black;
+	box-shadow: 3px 3px grey ;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 2em;
+	height: 100%;
+
 }
